@@ -14,10 +14,6 @@ import { postImage, getImageList } from "@/actions/images";
 function useImages() {
   const [images, setImages] = useState<React.ReactNode>();
 
-  useEffect(() => {
-    getImageList().then(setImages);
-  }, []);
-
   const onPickImage = useCallback(async () => {
     try {
       const result = await launchImageLibraryAsync({
