@@ -1,5 +1,5 @@
 "use client";
-import { useCallback, useState, useEffect } from "react";
+import { useCallback, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 import { EncodingType } from "expo-file-system";
@@ -7,7 +7,6 @@ import { readAsStringAsync } from "expo-file-system";
 import { launchImageLibraryAsync } from "expo-image-picker";
 
 import Button from "@/components/button";
-import ImageList from "@/components/images-list";
 import { IconSymbol } from "@/components/ui/IconSymbol";
 import { postImage, getImageList } from "@/actions/images";
 
